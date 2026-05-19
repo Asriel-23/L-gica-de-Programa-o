@@ -17,15 +17,15 @@
                 <div class="row">
                     <div class="col">
                         <ul class="list-group float-end text-center" style="width: 225px;">
-                            <li class="list-group-item">Night Shift</li>
-                            <li class="list-group-item">O Cinturão dos Mortos</li>
+                            <li class="list-group-item"><strong id="NightShift"></strong></li>
+                            <li id="titulo-hero" class="list-group-item"></li>
                             <li class="list-group-item">
                                 ❤️
-                                <progress value="100" max="100" style="accent-color: red;"></progress>
+                                <progress id="hp-hero" value="100" max="100" style="accent-color: red;"></progress>
                             </li>
                             <li class="list-group-item">
                                 🧪
-                                <progress value="100" max="100" style="accent-color: blue;"></progress>
+                                <progress id="mp-hero" value="100" max="100" style="accent-color: blue;"></progress>
                             </li>
                             <li class="list-group-item">
                                 ⚡
@@ -37,8 +37,8 @@
                     <div class=" col">
 
                         <ul class="list-group float-start text-center" style="width: 225px;">
-                            <li class="list-group-item">Doom Stone</li>
-                            <li class="list-group-item">Herdeiro de Medusa</li>
+                            <li class="list-group-item"><strong id="DoomStone"></strong></li>
+                            <li id="titulo-boss" class="list-group-item">Herdeiro de Medusa</li>
                             <li class="list-group-item">
                                 ❤️
                                 <progress value="80" max="100" style="accent-color: red;"></progress>
@@ -55,14 +55,9 @@
                     </div>
                 </div>
                 <div class="row ">
-                    <div class="col text-end"> <img src="assets/NightShift.gif" width="350px" height="350px"/></div>
+                    <div class="col text-end"> <img src="assets/NightShift.gif" width="350px" height="350px"/><div id="controles"></div>
                     <div class="col"> <img src="assets/DoomStone.gif" width="450px" height="450px"></div>
                 </div>
-
-
-
-
-
             </div>
             
                 <div class=" card-footer text-center">
@@ -72,5 +67,5 @@
                 </div>
         </div>
 </body>
-
+<script src="javascrpt.js"></script>
 </html>
