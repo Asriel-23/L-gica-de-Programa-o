@@ -23,8 +23,13 @@ document.getElementById("titulo-hero").textContent = NightShift.titulo;
 document.getElementById("DoomStone").textContent = DoomStone.nome
 document.getElementById("titulo-boss").textContent = DoomStone.titulo;
 
-let listaHabilidades = {
+let listaHabilidades = [
     new Habilidade(1, "⚔️ Ataque", 4, 0, 0),
     new Habilidade(2, "🪙 skill", 8, 10, 0),
     new Habilidade(3, "💥 Supremo", 15, 0, 100)
-};
+];
+listaHabilidades.forEach(hab => {
+    let btn = document.createElement("button");//<button>
+    btn.innerText = hab.home;
+    containerBtn.appendChild(btn);
+});
